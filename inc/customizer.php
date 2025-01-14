@@ -8,7 +8,7 @@ function swiper_customize_register($wp_customize)
     ));
     $wp_customize->add_setting('slides_effect', array(
         'type' => 'theme_mod',
-        'default' => 'fade',
+        'default' => 'coverflow',
     ));
     $wp_customize->add_control('slides_effect', array(
         'type' => 'select',
@@ -16,9 +16,9 @@ function swiper_customize_register($wp_customize)
         'section' => 'gallery_section',
         'settings' => 'slides_effect',
         'choices' => array(
-            'fade' => 'Fade',
-            'fadeIn' => 'Fade In',
-            'fadeOut' => 'Fade Out',
+            'cube' => 'Cube',
+            'coverflow' => 'Coverflow',
+            'freemode' => 'freemode',
         )
     ));
 }

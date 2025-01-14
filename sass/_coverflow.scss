@@ -1,0 +1,36 @@
+
+.swiper-container.coverflow {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .swiper-slide {
+    max-width: 400px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+    img {
+      max-width: 400px;
+      width: 100%;
+      min-height: 300px;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s;
+
+      &:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+
+      }
+    }
+
+  }
+
+}
+
