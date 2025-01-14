@@ -25,4 +25,5 @@
 
 require_once( dirname( __FILE__ ) . '/inc/enqueue.php' );
 require_once( dirname( __FILE__ ) . '/inc/post-type.php' );
+require_once( dirname( __FILE__ ) . '/inc/customizer.php' );
 require_once( dirname( __FILE__ ) . '/inc/shortcode.php' );

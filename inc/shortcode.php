@@ -12,10 +12,15 @@ function swiper_gallery_loops()
     $gallery = new WP_Query($args);
 
     if ($gallery->have_posts()) : ?>
-        <div class="swiper-container">
-            <?php while ($gallery->have_posts()) : $gallery->the_post(); ?>
-
-            <?php endwhile; ?>
+        <div class="swiper-container mySwiper <?php echo esc_attr(get_theme_mod('slides_effect')); ?>">
+            <div class="swiper-wrapper">
+                <?php while ($gallery->have_posts()) : $gallery->the_post(); ?>
+                    <div class="swiper-slide">
+                        <img src="<?php echo esc_url(the_post_thumbnail_url()); ?>" />
+                    </div>
+                <?php endwhile; ?>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     <?php endif;
     wp_reset_postdata();
