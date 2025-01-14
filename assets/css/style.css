@@ -24,9 +24,13 @@
   object-fit: cover;
 }
 .swiper-container.cube span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 16px;
+  background-color: rgba(255, 255, 255, 0.38);
+  width: 20px;
+  backdrop-filter: none;
+}
+.swiper-container.cube span.swiper-pagination-bullet {
   border-radius: 5px;
-  backdrop-filter: sepia(90%);
+  backdrop-filter: blur(20px);
   background: transparent;
 }
 .swiper-container.cube .swiper-horizontal > .swiper-pagination-bullets, .swiper-container.cube .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-container.cube .swiper-pagination-custom, .swiper-container.cube .swiper-pagination-fraction {
